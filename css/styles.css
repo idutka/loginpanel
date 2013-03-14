@@ -1,0 +1,211 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+
+	background-image: url('../img/bg.jpg');
+}
+
+#wrapper {
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 680px;
+	height: 375px;
+}
+
+#forma {
+	position: relative;
+	margin: 0 auto;
+	width: 350px;
+	height: 250px;
+	margin-bottom: 10px;
+}
+
+#forma2 {
+	position: relative;
+	margin: 0 auto;
+	width: 350px;
+	height: 250px;
+	margin-bottom: 10px;
+	background-color: #FFFFFF;
+}
+
+
+#plogin {
+	width: 220px;
+	height: 250px;
+	padding: 0 65px; 
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+}
+
+#plogin img {
+	margin-top: 20px;
+}
+
+#plogin .inp {
+	margin-top: 12px;
+	position: relative;
+}
+
+#plogin .inp input{
+	height: 30px;
+	width: 175px;
+	padding: 0 0 0 43px; 
+	border-radius: 2px;
+	border: 1px solid #CCCCCC;
+	background: url('../img/rightborder.png') no-repeat 30px center;
+	vertical-align: middle;
+	font-family: 'Candara';
+	color: #999999;
+	font-weight: bold;
+}
+
+#plogin .inp input:focus {
+	border: 1px solid #93C273;
+	box-shadow: 0 0 3px #93C273;
+	outline: none;
+	color: #666666;
+}
+
+
+#plogin .user , #plogin .key{
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	width: 30px;
+	height: 30px;
+}
+
+#plogin .user {
+	background: url('../img/user.png') no-repeat center center;
+}
+
+#plogin .key {
+	background: url('../img/key.png') no-repeat center center;
+}
+
+#plogin #forgotpass {
+	text-align: left;
+	margin-top: 3px;
+}
+
+#plogin #forgotpass a {
+	text-align: left;
+	font-size: 11px;
+	text-decoration: none;
+	font-family: 'Candara';
+	color: #BBBBBB;
+	font-weight: bold;
+}
+
+#plogin #forgotpass a:HOVER {
+	color: #999999;
+}
+
+
+#plogin #submit {
+	margin-top: 10px;
+}
+
+#plogin .btn {
+	height: 25px;
+	padding: 0 10px;
+	border: 0px;
+	border-radius: 3px; 
+	cursor: pointer;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #cccccc;
+	border-bottom: 2px solid #BCBCBC;
+	font-family: 'Candara';
+}
+
+#plogin .btn:HOVER {
+	border: 0px;
+	border-top: 1px solid #BCBCBC;
+	border-bottom: 1px solid #BCBCBC;
+}
+
+#plogin .btn:ACTIVE {
+	border: 0px;
+	border-top: 2px solid #BCBCBC;
+}
+
+#plogin #signup {
+	float: left;
+}
+
+#plogin #signin {
+	float: right;
+}
+
+
+#plshadow1 {
+	width: 346px;
+	height: 10px;
+	position: absolute;
+	bottom: -3px;
+	left: 2px;
+
+}
+
+#plshadow2 {
+	width: 342px;
+	height: 10px;
+	position: absolute;
+	bottom: -6px;
+	left: 4px;
+}
+
+.panel {
+	border-radius: 3px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.25);
+	background-color: #FFFFFF;
+}
+
+
