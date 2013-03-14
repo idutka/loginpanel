@@ -1,8 +1,5 @@
- $(document).ready(function(){   
 
-$("#forma").flip({
-	direction:'tb'
-})
-
-$("#forma").revertFlip()
-})
+function checkform(t) {
+	console.log(t);
+	return false;
+}
