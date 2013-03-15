@@ -9,7 +9,7 @@
         <link type="text/css" href="css/styles.css" rel="stylesheet" />
         <link type="text/css" href="css/flip.css" rel="stylesheet" />
 
-        <script type="text/javascript" src="js/utils.js"></script>
+        <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
         <script type="text/javascript" src="js/myscript.js"></script>
     </head>
     <body>
@@ -23,19 +23,19 @@
                 <div id="plshadow1" class="panel">
                 <div id="plogin" class="panel">
                     <img src='img/foto.png' alt='foto'>
-                    <form onsubmit="return checkform(this);">
+                    <form id="formsignin" method="POST">
                         <div id="inpemail" class="inp">
                             <div class="user"></div>
-                            <input  type="text" name="email" placeholder="email">
+                            <input class="valid" id="email" type="text" name="email" placeholder="email">
                         </div>
                         <div id="inppass" class="inp">
                             <div class="key"></div>
-                            <input  type="password" name="pass" placeholder="password">
+                            <input class="notvalid" id="pass" type="password" name="pass" placeholder="password">
                         </div>
                         <div id="forgotpass"><a href="#">Forgot your password?</a></div>
                         <div id="submit">
-                            <input id="signup" class="btn signup" name="signup" value="Sign Up">
-                            <input type="submit" class="btn signin" name="signin" value="Sign In">
+                            <button id="signup" class="btn signup" name="signup">Sign Up</button>
+                            <button type="submit" class="btn signin" name="signin">Sign In</button>
                         </div>
                     </form>
                 </div>
@@ -51,26 +51,27 @@
                 <div id="plshadow2" class="panel">
                 <div id="plshadow1" class="panel">
                 <div id="plogin" class="panel">
-                    <form onsubmit="return checkform(this);">
+                    <form id="formsignup" method="POST">
+                        <br/>
                         <div id="inpemail" class="inp">
                             <div class="user"></div>
-                            <input  type="text" name="email">
+                            <input class="valid" type="text" name="name" placeholder="name">
                         </div>
                         <div id="inpemail" class="inp">
                             <div class="user"></div>
-                            <input  type="text" name="email">
+                            <input class="valid" type="text" name="email" placeholder="email">
                         </div>
                         <div id="inppass" class="inp">
                             <div class="key"></div>
-                            <input  type="password" name="pass">
+                            <input class="valid" type="password" name="pass" placeholder="password">
                         </div>
                         <div id="inppass" class="inp">
                             <div class="key"></div>
-                            <input  type="password" name="pass">
+                            <input class="valid" type="password" name="pass2" placeholder="password">
                         </div>
                         <div id="submit">
-                            <input type="submit"class="btn signup" name="signup" value="Sign Up">
-                            <input id="signin" class="btn signin" name="signin" value="Sign In">
+                            <button type="submit"class="btn signup" name="signup">Sign Up</button>
+                            <button id="signin" class="btn signin" name="signin">Sign In</button>
                         </div>
                     </form>
                 </div>

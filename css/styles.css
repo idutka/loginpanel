@@ -85,7 +85,6 @@ body {
 	width: 175px;
 	padding: 0 0 0 43px; 
 	border-radius: 2px;
-	border: 1px solid #CCCCCC;
 	background: url('../img/rightborder.png') no-repeat 30px center;
 	vertical-align: middle;
 	font-family: 'Candara';
@@ -95,12 +94,19 @@ body {
 }
 
 #plogin .inp input:focus {
-	border: 1px solid #93C273;
+	border: 1px solid #93C273 !important;
 	box-shadow: 0 0 3px #93C273;
 	outline: none;
 	color: #666666;
 }
 
+.valid {
+    border: 1px solid #CCCCCC;
+}
+
+.notvalid {
+    border:1px solid #FF6666;
+}
 
 #plogin .user , #plogin .key{
 	margin: 1px;
@@ -201,5 +207,3 @@ body {
 	box-shadow: 0 0 5px rgba(0,0,0,0.25);
 	background-color: #FFFFFF;
 }
-
-
