@@ -11,31 +11,36 @@
 
         <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
         <script type="text/javascript" src="js/myscript.js"></script>
+
+        <link rel="stylesheet" href="css/validationEngine.jquery.css" type="text/css"/>
+        <script src="js/jquery.validationEngine-en.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
+
     </head>
     <body>
-        <div id="wrapper">
+    <div id="wrapper">
 
-            <section class="container">
+    <section class="container">
     <div id="card">
       <figure class="front">
                 <div id="forma">
-                <div id="plshadow2" class="panel">
-                <div id="plshadow1" class="panel">
-                <div id="plogin" class="panel">
+                <div class="plshadow2 panel">
+                <div class="plshadow1 panel">
+                <div class="plogin panel">
                     <img src='img/foto.png' alt='foto'>
                     <form id="formsignin" method="POST">
-                        <div id="inpemail" class="inp">
+                        <div class="inpemail inp">
                             <div class="user"></div>
-                            <input class="valid" id="email" type="text" name="email" placeholder="email">
+                            <input class="valid validate[required,custom[email]]" type="text" name="email" placeholder="email" >
                         </div>
-                        <div id="inppass" class="inp">
+                        <div class="inppass inp">
                             <div class="key"></div>
-                            <input class="valid" id="pass" type="password" name="pass" placeholder="password">
+                            <input class="valid validate[required]" type="password" name="pass" placeholder="password" >
                         </div>
                         <div id="forgotpass"><a href="#">Forgot your password?</a></div>
-                        <div id="submit">
-                            <button id="signup" class="btn signup" name="signup">Sign Up</button>
+                        <div class="submit">
                             <button type="submit" class="btn signin" name="signin">Sign In</button>
+                            <button id="signup" class="btn signup" name="signup">Sign Up</button>
                         </div>
                     </form>
                 </div>
@@ -48,28 +53,28 @@
       <figure class="back">
 
                 <div id="forma">
-                <div id="plshadow2" class="panel">
-                <div id="plshadow1" class="panel">
-                <div id="plogin" class="panel">
+                <div class="plshadow2 panel">
+                <div class="plshadow1 panel">
+                <div class="plogin panel">
                     <form id="formsignup" method="POST">
                         <br/>
-                        <div id="inpemail" class="inp">
+                        <div class="inpemail inp">
                             <div class="user"></div>
-                            <input class="valid" type="text" name="name" placeholder="name">
+                            <input class="valid validate[required]" type="text" name="name" placeholder="name">
                         </div>
-                        <div id="inpemail" class="inp">
+                        <div class="inpemail inp">
                             <div class="user"></div>
-                            <input class="valid" type="text" name="email" placeholder="email">
+                            <input class="valid validate[required,custom[email]]" type="text" name="email" placeholder="email">
                         </div>
-                        <div id="inppass" class="inp">
+                        <div class="inppass inp">
                             <div class="key"></div>
-                            <input class="valid" type="password" name="pass" placeholder="password">
+                            <input class="valid validate[required,minSize[6]]"  id="pass" type="password" name="pass" placeholder="password">
                         </div>
-                        <div id="inppass" class="inp">
+                        <div class="inppass inp">
                             <div class="key"></div>
-                            <input class="valid" type="password" name="pass2" placeholder="password">
+                            <input class="valid validate[required,equals[pass]]" type="password" name="pass2" placeholder="password">
                         </div>
-                        <div id="submit">
+                        <div class="submit">
                             <button type="submit"class="btn signup" name="signup">Sign Up</button>
                             <button id="signin" class="btn signin" name="signin">Sign In</button>
                         </div>
@@ -86,7 +91,7 @@
   </section>
           
 
-        </div>   <!-- end wrapper -->
+    </div>   <!-- end wrapper -->
 
         <script src="js/utils.js"></script>
         <script src="js/flip-card.js"></script>

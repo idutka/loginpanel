@@ -61,7 +61,7 @@ body {
 	height: 250px;
 }
 
-#plogin {
+.plogin {
 	width: 220px;
 	height: 250px;
 	padding: 0 65px; 
@@ -72,15 +72,15 @@ body {
 	float: left;
 }
 
-#plogin img {
+.plogin img {
 	margin-top: 20px;
 }
 
-#plogin .inp {
+.plogin .inp {
 	margin-top: 12px;
 }
 
-#plogin .inp input{
+.plogin .inp input{
 	height: 30px;
 	width: 175px;
 	padding: 0 0 0 43px; 
@@ -93,7 +93,7 @@ body {
 	margin-left: -32px;
 }
 
-#plogin .inp input:focus {
+.plogin .inp input:focus {
 	border: 1px solid #93C273 !important;
 	box-shadow: 0 0 3px #93C273 !important;;
 	outline: none;
@@ -109,27 +109,27 @@ body {
     box-shadow: 0 0 3px #FF6666;
 }
 
-#plogin .user , #plogin .key{
+.plogin .user , .plogin .key{
 	margin: 1px;
 	width: 30px;
 	height: 30px;
 	float: left;
 }
 
-#plogin .user {
+.plogin .user {
 	background: url('../img/user.png') no-repeat center center;
 }
 
-#plogin .key {
+.plogin .key {
 	background: url('../img/key.png') no-repeat center center;
 }
 
-#plogin #forgotpass {
+.plogin #forgotpass {
 	text-align: left;
 	margin-top: 3px;
 }
 
-#plogin #forgotpass a {
+.plogin #forgotpass a {
 	text-align: left;
 	font-size: 11px;
 	text-decoration: none;
@@ -138,16 +138,16 @@ body {
 	font-weight: bold;
 }
 
-#plogin #forgotpass a:HOVER {
+.plogin #forgotpass a:HOVER {
 	color: #999999;
 }
 
 
-#plogin #submit {
+.plogin .submit {
 	margin-top: 10px;
 }
 
-#plogin .btn {
+.plogin .btn {
 	width: 100px;
 	height: 25px;
 	border: 0px;
@@ -162,43 +162,41 @@ body {
 	text-align: center;
 }
 
-#plogin .btn:HOVER {
+.plogin .btn:HOVER {
 	border: 0px;
 	border-top: 1px solid #BCBCBC;
 	border-bottom: 1px solid #BCBCBC;
 }
 
-#plogin .btn:ACTIVE {
+.plogin .btn:ACTIVE {
 	border: 0px;
 	border-top: 2px solid #BCBCBC;
 	outline: none;
 }
 
-#plogin .btn:FOCUS {
+.plogin .btn:FOCUS {
 	outline: none;
 }
 
-#plogin .signup {
+.plogin .signup {
 	float: left;
 }
 
-#plogin .signin {
+.plogin .signin {
 	float: right;
 }
 
 
-#plshadow1 {
+.plshadow1 {
 	width: 346px;
 	height: 250px;
 	margin-top: -3px;
 	margin-right: -2px;
 	margin-left: -2px;
 	float: left;
-
-
 }
 
-#plshadow2 {
+.plshadow2 {
 	width: 342px;
 	height: 250px;
 }

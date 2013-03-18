@@ -13,6 +13,7 @@
       width: 100%;
       height: 100%;
       position: absolute;
+      -webkit-transform: translate3D(0, 0, 0);
       -webkit-transition: -webkit-transform 1s;
          -moz-transition: -moz-transform 1s;
            -o-transition: -o-transform 1s;
@@ -35,6 +36,7 @@
     }
 
     #card figure {
+      -webkit-transform: translate3D(0, 0, 0);
       display: block;
       height: 100%;
       width: 100%;
@@ -49,11 +51,11 @@
     }
 
     #card .front {
-      background: red;
+      background: blue;
     }
 
     #card .back {
-      background: blue;
+      background: red;
       -webkit-transform: rotateY( 180deg );
          -moz-transform: rotateY( 180deg );
            -o-transform: rotateY( 180deg );
